@@ -1,0 +1,89 @@
+html,body{
+	height: 100%;
+}
+.jsf_left{
+	height: 100%;
+	width: 180px;
+	background-color: #333;
+	padding-top: 70px;
+}
+.v {
+	float: right;
+	width: 14px;
+	height: 14px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.vtitle .v01 {
+	background-color: #1fbad6;
+	color: #fff;
+}
+.vson_line{
+	 -moz-box-shadow:-2px -2px 2px #2f2f2f; 
+	  -webkit-box-shadow:-2px -2px 2px #2f2f2f; 
+	  box-shadow:-2px -2px 2px #2f2f2f;
+	
+}
+.vcon{
+	display: none;
+}
+.vtitle .v02 {
+	background-color: #333;
+}
+.vtitle {
+	height: 25px;
+	line-height: 25px;
+	font-size: 12px;
+	color: #fff;
+	cursor: pointer;
+	text-indent: 20px;
+}
+.vtitle em {
+	background: #333;
+	width: 180px;
+	height: 25px;
+	display: block;
+	color: #ccc;
+}
+.vtitle em:hover {
+	background: #333;
+	width: 180px;
+	height: 25px;
+	display: block;
+	background-color: #1fbad6;
+	color: #fff;
+}
+.ss{background-color: #fff;}
+.vconlist {
+	background: #1a1a1a;
+}
+
+.vconlist li a {
+	height: 25px;
+	line-height: 25px;
+	text-indent: 32px;
+	display: block;
+	font-size: 12px;
+	color: #ccc;
+}
+.select{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/left_ico.png") left center no-repeat;
+	color: #fff;
+}
+.vconlist .select a{
+	color: #fff;
+}
+.select:hover{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/left_ico.png") left center no-repeat;
+}
+
+.vconlist li.select a:hover{
+	color: #fff;
+	text-decoration: none;
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/left_ico.png") left center no-repeat;
+}
+.vconlist li a:hover{
+	background: #333;
+	color: #fff;
+}

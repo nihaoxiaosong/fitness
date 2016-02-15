@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wanhang.fitness.dao.ModuleDao">
+	<resultMap id="moduleResult" type="Module">
+	    <id property="id" column="id" />
+	    <result property="moduleCode" column="module_code" />
+	    <result property="moduleName" column="module_name" />
+	    <result property="moduleUrl" column="module_url" />
+	    <result property="moduleIcon" column="module_icon" />
+	    <result property="level" column="level" />
+	    <result property="parentCode" column="parent_code" />
+	</resultMap>
+	
+	<select id="list" resultMap="moduleResult">
+		SELECT * FROM fitness_module order by id 
+	</select>
+	
+	<select id="getModuleListByParentCode" parameterType="String" resultMap="moduleResult">
+		select * from fitness_module where parent_code=#{parentCode} order by id 
+	</select>
+	
+	<select id="findModuleByModuleCode" parameterType="String" resultMap="moduleResult">
+		select * from fitness_module where module_code=#{moduleCode} order by id 
+	</select>
+	
+	
+</mapper>

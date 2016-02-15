@@ -1,0 +1,73 @@
+ul{
+	margin: 0;
+	padding: 0;
+}
+.jobadd{
+	width: 100%;
+	height: 100%;
+}
+.jobadd_title{
+	height: 45px;
+	line-height: 45px;
+}
+.jobadd_title_left{
+	float: left;
+	width: 180px;
+	height: 25px;
+	background-color: #e6e6e6;
+	color: #333;
+	font-size: 12px;
+	line-height: 25px;
+	overflow: hidden;
+	text-align: center;
+	border-radius:3px;
+	margin: 10px 0 0 0;
+}
+.jobadd_title_right{
+	float: right;
+}
+.jobadd_title_right input:focus{
+	color: #fff;
+}
+.jobadd_body{
+	height: 500px;
+	background-color: #e6e6e6;
+}
+.jobadd_body h3{
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	overflow: hidden;
+	text-indent: 20px;
+	margin: 0 auto;
+	padding: 20px 0 0;
+	color: #999;
+}
+.card-style{
+	height: 45px;
+	clear: both;
+	padding-top: 10px;
+}
+.card-style lable{
+	float: left;
+	width: 80px;
+	height: 27px;
+	margin-left: 20px;
+	font-size: 12px;
+	color: #999;
+	line-height: 27px;
+	margin-top: 10px;
+}
+.card-style .pos-jobadd{
+	width: 150px;
+	float: left;
+	background-color: #fff;
+	margin-top: 10px;
+}
+.card-style .pos_jobadds{
+	width: 150px;
+	margin-top: -3px;
+}
+.card-style .pos_jobadds li:hover{
+	background-color: #fff;
+}

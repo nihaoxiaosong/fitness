@@ -1,0 +1,7 @@
+body{font-size:12px;}
+.gym_header,
+.main-container{width:100%; min-width:1258px;}
+.main-container .left-menu{width:180px; vertical-align:top;}
+.main-container .left-menu a{cursor:pointer;}
+.main-container .main{vertical-align:top;min-height:555px !important;}
+.content-body{min-height:590px;}

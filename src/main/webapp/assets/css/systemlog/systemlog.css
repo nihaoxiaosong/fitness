@@ -1,0 +1,139 @@
+.systemlog_tree i{
+	font-style: normal;
+	width: 50px;
+	float: left;
+	height: 12px;
+}
+.systemlog{
+	width: 100%;
+	height: 100%;
+}
+.button_keep{
+	width: 70px;
+	background-color: #1FBAD6;
+	border: none;
+	color: #fff;
+}
+.button_cancle{
+	width: 70px;
+	background-color: #333;
+	border: none;
+	color: #fff;
+}
+.systemlog_title{
+	height: 45px;
+	line-height: 45px;
+}
+.systemlog_title_left{
+	float: left;
+	width: 180px;
+	height: 25px;
+	background-color: #e6e6e6;
+	color: #333;
+	font-size: 12px;
+	line-height: 25px;
+	overflow: hidden;
+	text-align: center;
+	border-radius:3px;
+	margin: 10px 0 0 0;
+}
+.systemlog_title_right{
+	float: right;
+}
+.systemlog_title_right input:focus{
+	color: #fff;
+}
+.systemlog_body{
+	height: 500px;
+	background-color: #e6e6e6;
+}
+.systemlog_body h3{
+	height: 12px;
+	line-height: 12px;
+	font-size: 12px;
+	overflow: hidden;
+	text-indent: 20px;
+	margin: 0 auto;
+	padding: 20px 0 0;
+	color: #999;
+}
+.systemlog_tree{
+	padding-left: 20px;
+	overflow: hidden;
+	clear: both;
+	padding-top: 20px;
+}
+.systemlog_tree lable{
+	width: 90px;
+	height: 16px;
+	overflow: hidden;
+	font-size: 12px;
+	color: #999;
+	display: block;
+	float: left;
+	
+}
+.systemlog_tree span{
+	width: 12px;
+	height: 12px;
+	float: left;
+	overflow: hidden;
+	margin-top: 2px;
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/block.png") center center no-repeat;
+}
+.systemlog_tree span:hover{
+	width: 12px;
+	height: 12px;
+	float: left;
+	overflow: hidden;
+	
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/block_hover.png") center center no-repeat;
+}
+.systemlog_tree .system_log_span_click{
+	width: 12px;
+	height: 12px;
+	float: left;
+	overflow: hidden;
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/block_click.png") center center no-repeat;
+}
+.systemlog_tree .system_log_span_click:hover{
+	width: 12px;
+	height: 12px;
+	float: left;
+	overflow: hidden;
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/block_click.png") center center no-repeat;
+}
+.systemlog_tree em{
+	width: 12px;
+	font-style: normal;
+	margin-top: 2px;
+	height: 12px;
+	float: left;
+	overflow: hidden;
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/triangle.png") center center no-repeat;
+}
+.systemlog_tree .system_log_em_click{
+	width: 12px;
+	height: 12px;
+	float: left;
+	overflow: hidden;
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/triangle_click.png") center center no-repeat;
+}
+.systemlog_tree_second{
+	clear: both;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.systemlog_tree_third{
+	clear: both;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.systemlog_tree_fourth{
+	clear: both;
+	padding-left: 20px;
+	padding-top: 15px;
+}
+.add{
+	display: block;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+	<link rel="stylesheet" type="text/css" href="css/checkbox&&radio.css"/>
+    <script src="js/jquery.1.11.2.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/raido&&checkbox.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <div class="title">
+        Radio & Checkbox
+    </div>
+    
+    <div class="rdo">
+        <!--男生-->
+        <h1>radio</h1>
+        <input type="radio" name="rdo" class="rdolist" checked="checked" />
+        <label class="rdobox">
+            <span class="check-image"></span>
+            <span class="radiobox-content">男</span>
+        </label>
+        <!--女生-->
+        <input type="radio" name="rdo" class="rdolist" />
+        <label class="rdobox">
+            <span class="check-image"></span>
+            <span class="radiobox-content">女</span>
+        </label>
+    </div>
+
+    <!-- 分割线 -->
+    <hr />
+    
+    <!-- 多选 -->
+    <h1>checkbox</h1>
+    <div class="fuxuan">
+        
+        <input type="checkbox" name="chk" class="chklist" checked="checked" />
+        <!--  -->
+        <label class="chkbox">
+            <span class="check-image"></span>
+            <span class="radiobox-content">UI设计师</span>
+        </label>
+        <!--  -->
+        <input type="checkbox" name="chk" class="chklist" />
+        <!--  -->
+        <label class="chkbox">
+            <span class="check-image"></span>
+            <span class="radiobox-content">软件工程师</span>
+        </label>
+        <!--  -->
+        <input type="checkbox" name="chk" class="chklist" />
+        <!--  -->
+        <label class="chkbox">
+            <span class="check-image"></span>
+            <span class="radiobox-content">架构师</span>
+        </label>
+    </div>
+    
+    <hr />
+    <div id="input-public">
+    	
+    </div>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/labelauty.js"></script>
+    <script>
+        $(document).ready(function () {
+            //参数{input类名，选择类型(单选or多选)}
+            $(".rdolist").labelauty("rdolist", "rdo");
+            $(".chklist").labelauty("chklist", "check");
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wanhang.fitness.dao.ShortcutDao">
+	<resultMap id="shortcutResult" type="Shortcut">
+	    <id property="id" column="id" />
+	    <result property="userCode" column="user_code"/>
+	    <result property="moduleCode" column="module_code" />
+	    <!-- <association property="module" column="module_code" select="com.wanhang.fitness.mapper.moduleMapper.findModuleByModuleCode"></association> -->
+	</resultMap>
+	
+	<insert id="save" parameterType="Shortcut">
+		insert into fitness_shortcut values(null,#{userCode},#{moduleCode})
+	</insert>
+	
+	<delete id="delete" parameterType="Integer">
+		delete from fitness_shortcut where id=#{id}
+	</delete>
+	
+	<update id="update" parameterType="Shortcut">
+		update fitness_shortcut
+		<set>
+			<if test="userCode!=null">
+				userCode=#{userCode},
+			</if>
+			<if test="moduleCode!=null">
+				moduleCode=#{moduleCode},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+	
+	<select id="getShortcutListByUserCode" parameterType="String" resultMap="shortcutResult">
+		select * from fitness_shortcut where user_code=#{user_code}
+	</select>
+	
+</mapper>

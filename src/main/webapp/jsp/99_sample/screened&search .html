@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>search</title>
+    <link href="../assets/css/left/reset.css" rel="stylesheet" type="text/css" />
+	<link href="../assets/css/wh.common.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="padding:50px 50px;">
+    <!--仿select框-->
+     <div class="common_select" id="common_selected">
+          <div class="common_top_select">
+               <span class="common_select_type">请选择类型</span>
+               <span class="common_select_img"><img src="http://a.myydsj.iydsj.com/fitness/assets/images/select.png"></span>
+          </div>
+          <ul class="common_select_ul">
+             <li class="common_select_li" data-option="">全部付款</li>
+             <li class="common_select_li" data-option="">未完成状态</li> 
+             <li class="common_select_li" data-option="">已完成状态</li> 
+             <li class="common_select_li" data-option="">已完成状态1</li>
+             <li class="common_select_li" data-option="">已完成状态2</li>
+             <li class="common_select_li" data-option="">已完成状态3</li> 
+          </ul>  
+     </div>
+    <!--仿select框end-->
+    <!--input--搜索框-->
+    <div class="common_search clearfix" style="margin-top:50px;">
+         <input type="text" class="common_input_search" placeholder="职位关键字...">
+         <span class="common_search_btn"></span>
+    </div>
+    <!--input--搜索框end-->
+    
+    <!--年月日input-->
+    <div class="common_time_box" style="margin-top:50px;">
+         <div class="common_time_bg">
+              <div class="common_time_right">
+                  <a href="javascript:void(0)" class="common_timeqd_btn">确定</a>
+              </div>
+         </div>
+         <div class="common_time_main clearfix">
+              <div class="common_time_left">
+                   <input id="d4311" type="text" class="common_start_time" placeholder="yyyy/mm/dd hh:mm" onclick="WdatePicker({dateFmt:'yyyy/MM/dd HH:mm',maxDate:'#F{$dp.$D(\'d4312\')}'})"><span class="common_time_line">-</span><input id="d4312" type="text" class="common_end_time" placeholder="yyyy/mm/dd hh:mm" onclick="WdatePicker({dateFmt:'yyyy/MM/dd HH:mm',minDate:'#F{$dp.$D(\'d4311\')}'})">
+              </div>
+         </div>
+    </div>
+</body>
+<script src="../assets/plugins/jquery/jquery-2.1.4.min.js" type="text/ecmascript"></script>
+<script src="../assets/js/screen&search.js" type="text/ecmascript"></script>
+<script src="../assets/js/My97DatePicker/WdatePicker.js" type="text/javascript"></script>
+</html>

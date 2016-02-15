@@ -1,0 +1,183 @@
+.tab-header{
+	width:100%;
+	border-bottom:solid 1px #e6e6e6;
+}
+.tab-td{
+	padding-left:8px;
+	white-space: nowrap;
+}
+.tab-msg{
+	font-size:12px;
+	color:#333333;
+	height:30px;
+	line-height:30px;
+	float:right;
+	padding-right:10px;
+	width:160px;
+	max-width:160px;
+	min-width:160px;
+	text-align:right;
+}
+.tab-msg img{
+	margin-right:5px;
+	position: relative;
+top: 2px;
+}
+
+.benma_ui_tab {
+	/*margin: 0;
+	padding: 0;
+	font-size: 12px;
+	position: relative;
+	top: 0;
+	line-height: 22px;
+	width: 98%;
+	border: 0 solid #999;
+	padding-top: 4px;
+	white-space: nowrap;
+	overflow: hidden;*/
+	white-space: nowrap;
+}
+
+.benma_ui_tab .tab_item {
+	line-height: 22px;
+	z-index: 100;
+	white-space: nowrap;
+	word-spacing: 0;
+	border-collapse: collapse;
+	margin-left: 2px;
+	float: left;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.benma_ui_tab .tab_title {
+	color:#999999;
+	font-size: 12px;
+	width:130px;
+	height:30px;
+	line-height: 30px;
+	border:solid 1px #e6e6e6;
+	text-align:center;
+	background-color:#fafafa;
+	border-bottom:none;
+}
+
+.benma_ui_tab .tab_item1_mouseover {
+	background-position: 0 -42px;
+}
+
+.benma_ui_tab .tab_item1_selected {
+	background-position: 0 -84px;
+}
+
+.benma_ui_tab .tab_item2_mouseover {
+	background-color:#ffffff;
+}
+
+.benma_ui_tab .tab_item2_selected {
+	background-color:#ffffff;
+	color:#333333;
+	box-shadow: 0px 2px 1px #FFF;
+}
+
+.benma_ui_tab .tab_item3_mouseover {
+	background-position: 0 -42px;
+}
+
+.benma_ui_tab .tab_item3_selected {
+	background-position: 0 -84px;
+}
+
+.benma_ui_tab .tab_close_mouseover {
+	background-position: 0 -14px;
+}
+
+.benma_ui_tab .tab_close_selected {
+	background-position: 0 0;
+}
+
+.benma_ui_tab .tab_close_noselected {
+	background-position: 0 -28px;
+}
+
+.benma_ui_tab .tab_close_none {
+	display: none;
+}
+
+.benma_ui_tab_bottom {
+	position: relative;
+	top: 0;
+	width: 98%;
+	border: 0 solid #999;
+	padding-top: 0;
+	padding-bottom: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.benma_ui_tab .tab_item_bottom {
+	position: relative;
+	top: -2px;
+	line-height: 20px;
+	z-index: 100;
+	white-space: nowrap;
+	word-spacing: 0;
+	border-collapse: collapse;
+	margin-left: 4px;
+	float: left;
+	cursor: hand;
+	cursor: pointer;
+}
+
+.benma_ui_tab .tab_item1_mouseover_bottom {
+	background-position: 0 -60px!important;
+}
+
+.benma_ui_tab .tab_item1_selected_bottom {
+	background-position: 0 -102px!important;
+}
+
+.benma_ui_tab .tab_item2_mouseover_bottom {
+	background-position: 0 -60px!important;
+}
+
+.benma_ui_tab .tab_item2_selected_bottom {
+	background-position: 0 -102px!important;
+	color: #fff;
+}
+
+.benma_ui_tab .tab_item3_mouseover_bottom {
+	background-position: left -60px!important;
+}
+
+.benma_ui_tab .tab_item3_selected_bottom {
+	background-position: left -102px!important;
+}
+
+.benma_ui_tab .tab_title_bottom {
+	padding: 4px;
+	line-height: 16px;
+}
+
+.benma_ui_tab .tab_close_bottom {
+	font-size: 9px;
+	top: 1px;
+}
+
+.index-info{
+	width:100%;
+	height:100%;
+	min-height:590px;
+	background: url(http://a.myydsj.iydsj.com/fitness/assets/images/tab/tab-index.png) 0 0 no-repeat;
+	background-size:100% 100%;
+}
+.index-info span{
+	font-size:22px;
+	color:#cccccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -110px;
+	margin-top: -15px;
+}

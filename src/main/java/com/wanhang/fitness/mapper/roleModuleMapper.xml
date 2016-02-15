@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wanhang.fitness.dao.RoleModuleDao">
+	<resultMap id="roleModuleResult" type="RoleModule">
+	    <id property="id" column="id" />
+	    <result property="roleCode" column="role_code" />
+	    <result property="moduleCode" column="module_code" />
+	    <association property="module" column="module_code" select="com.wanhang.fitness.dao.ModuleDao.findModuleByModuleCode"></association>
+	</resultMap>
+	
+	<insert id="saveList" parameterType="Map">
+		insert into fitness_role_module values
+		<foreach collection="roleModuleList" item="item" index="index" separator=",">
+		(null,#{index.roleCode},#{index.moduleCode})
+		</foreach>
+	</insert>
+	
+	<delete id="deleteByRoleCode" parameterType="Integer">
+		delete form fitness_role_module where id=#{id}
+	</delete>
+	
+	<select id="getRoleModuleByRoleCode" parameterType="String" resultMap="roleModuleResult">
+		select * from fitness_role_module where role_code=#{roleCode} order by id
+	</select>
+	
+	<select id="getRoleModuleListByRoleCode" parameterType="String" resultMap="roleModuleResult">
+		select * from fitness_role_module where role_code=#{roleCode} order by id
+	</select>
+	
+</mapper>

@@ -1,0 +1,81 @@
+#page{
+	height: 60px;
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+}
+.page{
+	width: 300px;
+	height: 54px;
+	overflow: hidden;
+	float: right;
+}
+.pos-two{
+	width: 50px;
+	height:18px;
+	float: left;
+}
+.page span{
+	display: block;
+	min-width: 20px;
+	height: 20px;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+	color: #999;
+	margin: 17px 0 0 10px;
+	float: left;
+	position: relative;
+}
+.page span input{
+	width: 50px;
+	height: 18px;
+	line-height: 18px;
+	text-indent: 8px;
+	border: 1px solid #e6e6e6;
+	border-radius:3px;
+	margin-top: -1px;
+	float: left;
+	color: #e6e6e6;
+	font-size: 12px;
+}
+.page .page_search{
+	width: 20px;
+	height: 20px;
+	border: none;
+	margin-left: 5px;
+	background:url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/go_on.png") center center no-repeat;
+}
+.page .page_search:hover{
+	width: 20px;
+	height: 20px;
+	border: none;
+	background:url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/go_hover.png") center center no-repeat;
+}
+.page span i{
+	font-style: normal;
+}
+.prev_tol{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/prev_tol.png") center center no-repeat;
+}
+.prev_tol:hover{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/prev_tol_hover.png") center center no-repeat;
+}
+.prev{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/prev.png") center center no-repeat;
+}
+.prev:hover{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/prev_hover.png") center center no-repeat;
+}
+.next{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/next.png") center center no-repeat;
+}
+.next:hover{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/next_hover.png") center center no-repeat;
+}
+.next_tol{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/next_tol.png") center center no-repeat;
+}
+.next_tol:hover{
+	background: url("http://a.myydsj.iydsj.com/fitness/assets/images/msgbox/next_tol_hover.png") center center no-repeat;
+}

@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+ul{margin:0; padding:0;}
+li{ list-style-type:none;}
+.gym_header{width:100%; height:70px; background-color:#1fbad6;
+	-moz-box-shadow:0px 3px 3px #cccccc; 
+	-webkit-box-shadow:0px 3px 3px #cccccc; 
+	box-shadow:0px 3px 3px #cccccc;
+}
+.gym_venue_name{ display:inline-block; height:70px; width:80px;}
+.gym_header_size13{ font-size:13px; color:#fff;}
+.gym_header_img{ margin:13px 0 6px 0;}
+.gym_nav_li{ float:left;}
+.gym_a_hover{ background-color:#03a6c3;}
+.gym_a_active{background-color:#027f96;}

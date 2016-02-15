@@ -1,0 +1,205 @@
+body{ font-family:"微软雅黑";margin-top: 0px; margin-bottom:0px;}
+ul, ol {
+	list-style: none;
+}
+h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+address, cite, dfn, em, var {
+	font-style: normal;
+}
+
+code, kbd, pre, samp, tt {
+	font-family: "Courier New", Courier, monospace;
+}
+
+small {
+	font-size: 12px;
+}
+
+/*筛选框*/
+.common_select{position:relative; width:120px; height:25px; line-height:25px; border:1px solid #e6e6e6; border-radius:3px; font-size:12px;}
+.common_select_type{ font-size:12px; color:#ccc; padding-left:10px; font-family:"宋体";}
+.common_select_img{width:10px; height:5px; display:inline-block; position:absolute; right:10px; top:-2px; cursor:pointer;}
+.common_select_ul{width:120px; border:1px solid #e6e6e6;  border-radius:3px; margin-top:3px; margin-left:-1px; position:absolute; z-index:21; display:none; border-bottom:none;}
+.common_select_li{height:25px; line-height:25px; border-bottom:1px solid #e6e6e6; text-indent:10px; color:#333; cursor:pointer; background-color:#fff;font-family:"宋体";}
+.common_select_li:hover{ background-color:#e6e6e6;}
+
+
+.table_style{
+	width: 100%;
+	margin-left: 10px;
+	margin:0 auto;
+	min-height: 455px;
+}
+.table_style table{
+	width: 100%;
+	border-spacing: 0;
+	margin: 0 auto;
+	text-indent: 8px;
+	text-align: left;
+}
+.table_style th{
+	height: 35px;
+	font-size: 12px;
+	color: #333;
+	font-weight: normal;
+	text-align: left;
+}
+.table_style td{
+	height: 35px;
+	font-size: 12px;
+	color: #999;
+	font-weight: normal;
+}
+.table_style th{
+	background-color: #e6e6e6;
+	border: none;
+}
+.table_style td{
+	border-left:1px solid #e6e6e6;
+	border-collapse:collapse; 
+}
+.table_style td:last-child{
+	border-right:1px solid #e6e6e6;
+	border-collapse:collapse; 
+}
+.table_style tr:nth-child(2n+1){
+	background-color: #fafafa;
+	border-top: none;
+	border-bottom: none;
+}
+.table_style tr:last-child td{
+	border-bottom:1px solid #e6e6e6;
+}
+input:focus{color:#333;}
+/*input--搜索框*/
+.common_search{
+    width:180px;
+	height:25px;
+	line-height:23px;
+	border:1px solid #e6e6e6;
+	border-radius:3px;
+	font-size:12px;	
+}
+.common_input_search{
+   width:150px;
+   height:23px;
+   line-height:23px;
+   border:none;	
+   color:#ccc;
+   text-indent:10px;
+   font-family:"宋体";
+}
+.common_search_btn{
+  width:17px;
+  height:17px;
+  display:inline-block;
+  background-image:url(http://a.myydsj.iydsj.com/fitness/assets/images/common_search.png);
+  background-repeat:no-repeat;
+  float:right;
+  cursor:pointer;
+  margin:4px 5px 0 0;
+}
+
+
+/*年月日input*/
+.common_time_main{
+
+ }
+.common_time_left{
+   position:absolute;
+   z-index:21;
+   margin:6px 0 0 10px;
+   float:left;
+}
+.common_start_time{
+   color:#ccc;
+   font-size:12px;
+   text-indent:10px;
+   width:125px;
+   height:25px;
+   border:1px solid #e6e6e6;
+   border-radius:3px;
+   font-family:"宋体";
+}
+.common_end_time{
+   color:#ccc;
+   font-size:12px;
+   text-indent:10px;
+   width:125px;
+   height:25px;
+   border:1px solid #e6e6e6;
+   border-radius:3px;
+   font-family:"宋体";
+}
+.common_time_line{
+   color:#e6e6e6;
+}
+.common_timeqd_btn{
+   display:inline-block;
+   width:50px;
+   height:25px;
+   line-height:25px;
+   color:#fff;
+   background-color:#1fbad6;
+   border-radius:3px;
+   text-align:center;
+   font-size:12px;	
+}
+.common_time_right{
+   margin:7px 10px 0 0;
+   float:right;
+}
+.common_time_bg{
+   position:absolute;
+   width:340px; 
+   height:39px; 
+   border:1px solid #e6e6e6; 
+   border-radius:3px;
+   box-shadow: 1px 1px 8px #ccc;
+   z-index:2;
+   display:none;
+   background-color: #fff;
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #ccc; 
+}
+::-webkit-input-placeholder :focus { /* WebKit browsers */ 
+color: #ccc; 
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #ccc; 
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #ccc; 
+} 
+/*保存取消按钮样式*/
+.wh-btn{
+	height: 25px;
+	line-height: 25px;
+	border-radius: 3px;
+	color: #999;
+	background-color: #fff;
+	font-size: 12px;
+	border:1px solid #e6e6e6;
+}
+.wh-btn-w01{
+	width: 70px;
+}
+.wh-btn-b01{
+	background:#1FBAD6;
+}
+.wh-btn-c01{
+	color: #fff;
+}
+.wh-btn-r01{
+	border: none;
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "nameTitle": "系统日志", 
+        "id": "111", 
+        "list": [
+            {
+                "names": "列表", 
+                "listid": "11101", 
+                "url": "operate/operate.html", 
+                "target": "_bland"
+            }
+        ]
+    }
+]

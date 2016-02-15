@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wanhang.fitness.dao.UserDao">
+	<resultMap id="userResult" type="User">
+	    <id property="id" column="id" />
+	    <result property="userCode" column="user_code" />
+	    <result property="userName" column="user_name" />
+	    <result property="password" column="password" />
+	    <result property="venueId" column="venue_id"/>
+	    <result property="venueName" column="venue_name" />
+	    <result property="birthday" column="birthday" />
+	    <result property="sex" column="sex" />
+	    <result property="marriage" column="marriage" />
+	    <result property="IDCard" column="ID_card" />
+	    <result property="phone" column="phone" />
+	    <result property="address" column="address" />
+	    <result property="workStatus" column="work_status" />
+	    <result property="workBeginDate" column="work_begin_date" />
+	    <result property="workEndDate" column="work_end_date" />
+	    <result property="bankCardCode" column="bank_card_code" />
+	    <result property="clothesSize" column="clothes_size" />
+	    <result property="trousersSize" column="trousers_size" />
+	    <result property="shoesSize" column="shoes_size" />
+	    <result property="workYear" column="work_year" />
+	    <result property="graduatedSchool" column="graduated_school" />
+	    <result property="specialty" column="specialty" />
+	    <result property="graduatedDate" column="graduated_date" />
+	    <result property="educationalBackground" column="educational_background" />
+	    <result property="hometown" column="hometown" />
+	    <result property="residence" column="residence" />
+	    <result property="career" column="career" />
+	    <result property="certificateNo" column="certificate_no" />
+	    <result property="certificateCode" column="certificate_code" />
+	    <collection property="userRoleList" column="user_code" select="com.wanhang.fitness.dao.UserRoleDao.getUserRoleListByUserCode"></collection>
+	    <collection property="shortcutList" column="user_code" select="com.wanhang.fitness.dao.ShortcutDao.getShortcutListByUserCode"></collection>
+	</resultMap>
+	
+	<select id="login" parameterType="User" resultMap="userResult">
+		select *
+		from fitness_user 
+		where user_code=#{userCode} and password=#{password} order by id
+	</select>
+	
+	<select id="save" parameterType="User">
+		insert into fitness_user 
+		values
+		(
+		null,#{userCode},#{userName},#{password},#{venueId},
+		#{venueName},#{birthday},#{sex},#{marriage},#{IDCard},
+		#{phone},#{address},#{workStatus},#{workBeginDate},#{workEndDate},
+		#{bankCardCode},#{clothesSize},#{trousersSize},#{shoesSize},#{workYear},
+		#{graduatedSchool},#{specialty},#{graduatedDate},#{educationalBackground},#{hometown},
+		#{residence},#{career},#{certificateNo},#{certificateCode}
+		)
+	</select>
+	
+	<update id="update" parameterType="User">
+		update fitness_user
+		<set>
+			<if test="userCode!=null">
+				user_code=#{userCode},
+			</if>
+			<if test="userName!=null">
+				user_name=#{userName},
+			</if>
+			<if test="password!=null">
+				password=#{password},
+			</if>
+			<if test="venueId!=null">
+				venue_id=#{venueId},
+			</if>
+			<if test="venueName!=null">
+				venue_name=#{venueName},
+			</if>
+			<if test="birthday!=null">
+				birthday=#{birthday},
+			</if>
+			<if test="sex!=null">
+				sex=#{sex},
+			</if>
+			<if test="marriage!=null">
+				marriage=#{marriage},
+			</if>
+			<if test="IDCard!=null">
+				ID_card=#{IDCard},
+			</if>
+			<if test="phone!=null">
+				phone=#{phone},
+			</if>
+			<if test="address!=null">
+				address=#{address},
+			</if>
+			<if test="workStatus!=null">
+				work_status=#{workStatus},
+			</if>
+			<if test="workBeginDate!=null">
+				work_begin_date=#{workBeginDate},
+			</if>
+			<if test="workEndDate!=null">
+				work_end_date=#{workEndDate},
+			</if>
+			<if test="bankCardCode!=null">
+				bank_card_code=#{bankCardCode},
+			</if>
+			<if test="clothesSize!=null">
+				clothes_size=#{clothesSize},
+			</if>
+			<if test="trousersSize!=null">
+				trousers_size=#{trousersSize},
+			</if>
+			<if test="shoesSize!=null">
+				shoes_size=#{shoesSize},
+			</if>
+			<if test="workYear!=null">
+				work_year=#{workYear},
+			</if>
+			<if test="graduatedSchool!=null">
+				graduated_school=#{graduatedSchool},
+			</if>
+			<if test="specialty!=null">
+				specialty=#{specialty},
+			</if>
+			<if test="graduatedDate!=null">
+				graduated_date=#{graduatedDate},
+			</if>
+			<if test="educationalBackground!=null">
+				educational_background=#{educationalBackground},
+			</if>
+			<if test="hometown!=null">
+				hometown=#{hometown},
+			</if>
+			<if test="residence!=null">
+				residence=#{residence},
+			</if>
+			<if test="career!=null">
+				career=#{career},
+			</if>
+			<if test="certificateNo!=null">
+				certificate_no=#{certificateNo},
+			</if>
+			<if test="certificateCode!=null">
+				certificate_code=#{certificateCode},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+	
+	<select id="findUserById" parameterType="Integer" resultType="User">
+		select 
+		id as id,
+		user_code as userCode,
+		user_name as userName,
+		password as password,
+		venue_id as venueId,
+	    venue_name as venueName,
+	    birthday as birthday,
+	    sex as sex,
+	    marriage as marriage,
+	    ID_card as IDCard,
+	    phone as phone,
+	    address as address,
+	    work_status as workStatus,
+	    work_begin_date as workBeginDate,
+	    work_end_date as workEndDate,
+	    bank_card_code as bankCardCode,
+	    clothes_size as clothesSize,
+	    trousers_size as trousersSize,
+	   	shoes_size as shoesSize,
+	    work_year as workYear,
+	    graduated_school as graduatedSchool,
+	    specialty as specialty,
+	    graduated_date as graduatedDate,
+	    educational_background as educationalBackground,
+	    hometown as hometown,
+	    residence as residence,
+	    career as career,
+	    certificate_no as certificateNo,
+	    certificate_code as certificateCode
+	    from fitness_user where id=#{id}
+	</select>
+	
+	<select id="getUserListByVenueId" parameterType="Integer" resultMap="userResult">
+		select * from fitness_user where venue_id=#{venueId}
+	</select>
+	
+	<select id="findUserByUserCode" parameterType="String" resultType="User">
+		select 
+		id as id,
+		user_code as userCode,
+		user_name as userName,
+		password as password,
+		venue_id as venueId,
+	    venue_name as venueName,
+	    birthday as birthday,
+	    sex as sex,
+	    marriage as marriage,
+	    ID_card as IDCard,
+	    phone as phone,
+	    address as address,
+	    work_status as workStatus,
+	    work_begin_date as workBeginDate,
+	    work_end_date as workEndDate,
+	    bank_card_code as bankCardCode,
+	    clothes_size as clothesSize,
+	    trousers_size as trousersSize,
+	   	shoes_size as shoesSize,
+	    work_year as workYear,
+	    graduated_school as graduatedSchool,
+	    specialty as specialty,
+	    graduated_date as graduatedDate,
+	    educational_background as educationalBackground,
+	    hometown as hometown,
+	    residence as residence,
+	    career as career,
+	    certificate_no as certificateNo,
+	    certificate_code as certificateCode
+		from fitness_user where user_code=#{userCode}
+	</select>
+</mapper>

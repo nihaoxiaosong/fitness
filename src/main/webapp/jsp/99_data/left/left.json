@@ -1,0 +1,120 @@
+[
+    {
+        "nameTitle": "Cecak In/Out", 
+        "id": "1", 
+        "list": [
+            {
+                "names": "请假销毁", 
+                "listid": "13", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "短信批示", 
+                "listid": "14", 
+                "url": "sms/smsInstruct.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "短信发送", 
+                "listid": "15", 
+                "url": "sms/smsSend.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "合同管理（会籍管理）", 
+                "listid": "16", 
+                "url": "agreement/membershipAgreement.html", 
+                "target": "_bland"
+            }
+        ]
+    }, 
+    {
+        "nameTitle": "综合操作功能", 
+        "id": "2", 
+        "list": [
+            {
+                "names": "请假销毁", 
+                "listid": "1", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "短信批示", 
+                "listid": "2", 
+                "url": "sms/smsInstruct.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "短信发送", 
+                "listid": "3", 
+                "url": "sms/smsSend.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "合同管理（会籍管理）", 
+                "listid": "4", 
+                "url": "agreement/membershipAgreement.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "合同管理（PT合同）", 
+                "listid": "5", 
+                "url": "agreement/commonAgreement.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "合同管理（租柜管理）", 
+                "listid": "6", 
+                "url": "agreement/commonAgreement.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "私教工作绩效安排", 
+                "listid": "7", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "员工请假", 
+                "listid": "8", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "赠送", 
+                "listid": "9", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "充值", 
+                "listid": "10", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "评价管理", 
+                "listid": "11", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "课程", 
+                "listid": "12", 
+                "url": "leave/leave.html", 
+                "target": "_bland"
+            }
+        ]
+    }, 
+    {
+        "nameTitle": "商品售卖", 
+        "id": "3", 
+        "list": [ ]
+    }, 
+    {
+        "nameTitle": "综合查询", 
+        "id": "4", 
+        "list": [ ]
+    }
+]

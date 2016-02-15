@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wanhang.fitness.dao.SystemLogDao">
+	<resultMap id="SystemLog" type="SystemLog">
+	    <id property="id" column="id"/>
+	    <result property="venueId" column="venue_id"/>
+	    <result property="venueName" column="venue_name"/>
+	    <result property="moduleCode" column="module_code" />
+	    <result property="moduleName" column="module_name" />
+	    <result property="logContent" column="log_content"/>
+	    <result property="createrCode" column="creater_code" />
+	    <result property="createrName" column="creater_name" />
+	    <result property="createDate" column="create_date" />
+	    
+	</resultMap>
+	
+	<select id="list" resultMap="SystemLog" parameterType="map">
+		SELECT * FROM fitness_system_log
+		<if test="start!=null and pageSize!=null">
+			limit #{start},#{pageSize}
+		</if>
+	</select>
+	
+	<select id="count" resultType="Integer">
+		select count(1) from fitness_system_log
+	</select>
+	
+	<insert id="save" parameterType="SystemLog">
+		insert into fitness_system_log values(null,#{venueId},#{venueName},#{moduleCode},#{moduleName},#{logContent},#{createrCode},#{createrName},#{createDate});
+	</insert>
+	
+</mapper>

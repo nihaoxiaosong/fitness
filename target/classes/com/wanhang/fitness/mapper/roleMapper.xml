@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.wanhang.fitness.dao.RoleDao">
+	<resultMap id="roleResult" type="Role">
+	    <id property="id" column="id" />
+	    <result property="roleCode" column="role_code" />
+	    <result property="roleName" column="role_name" />
+	    <result property="venueId" column="venue_id" />
+	    <result property="venueName" column="venue_name" />
+	    <result property="enable" column="enable" />
+	    <collection property="roleModuleList" column="role_code" select="com.wanhang.fitness.dao.RoleModuleDao.getRoleModuleListByRoleCode"></collection>
+	</resultMap>
+	
+	<select id="save" parameterType="Role">
+		insert into fitness_role values(null,#{roleCode},#{roleName},#{venueId},#{venueName},#{enable})
+	</select>
+	
+	<delete id="deleteById" parameterType="Integer">
+		delete from fitness_role where id=#{id}
+	</delete>
+	
+	<update id="update" parameterType="Role">
+		update fitness_role
+		<set>
+			<if test="roleCode!=null">
+				role_code=#{roleCode},
+			</if>
+			<if test="roleName!=null">
+				role_name=#{roleName},
+			</if>
+			<if test="venueId!=null">
+				venue_id=#{venueId},
+			</if>
+			<if test="venueName!=null">
+				venue_name=#{venueName},
+			</if>
+			<if test="enable!=null">
+				enable=#{enable},
+			</if>
+		</set>
+		where id=#{id}
+	</update>
+	
+	<select id="findById" parameterType="Integer" resultMap="roleResult">
+		select * from fitness_role where id=#{id} order by id
+	</select>
+	
+	<select id="getRoleListByVenueId" parameterType="Integer" resultMap="roleResult">
+		select * from fitness_role where venue_id=#{venueId} order by id
+	</select>
+	
+	<select id="findRoleByRoleCode" parameterType="String" resultMap="roleResult">
+		select * from fitness_role where role_code=#{roleCode} order by id
+	</select>
+	
+	
+</mapper>

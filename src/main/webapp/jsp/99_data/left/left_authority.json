@@ -1,0 +1,20 @@
+[
+    {
+        "nameTitle": "权限管理", 
+        "id": "110", 
+        "list": [
+            {
+                "names": "列表", 
+                "listid": "11001", 
+                "url": "authority/authority.html", 
+                "target": "_bland"
+            }, 
+            {
+                "names": "新增", 
+                "listid": "11002", 
+                "url": "authority/authority.html", 
+                "target": "_bland"
+            }
+        ]
+    }
+]
